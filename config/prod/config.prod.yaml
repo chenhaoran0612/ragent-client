@@ -1,0 +1,32 @@
+ListenIp: 0.0.0.0 # 服务使用的IP
+ListenPort: 5678 #监听端口号
+rpcPort : 8889 # Http 健康检测端口
+performancePort : 9898 # 性能分析端口
+Server:
+  -
+    ip: 127.0.0.1
+    port: 3334
+  -
+    ip: 127.0.0.1
+    port: 3335
+  -
+    ip: 127.0.0.1
+    port: 3336
+redis:
+  address: 127.0.0.1
+  password:
+  port: 6379
+  maxidle: 3
+  maxactive: 10
+  idletimeout: 0
+IsAutoTransPool : true
+ServerId : 1
+logger:
+  filename: ./ragent-client.log
+  maxSize: 500
+  maxBackups: 1000
+  maxAge: 1000
+  level: debug
+  verbose: 1
+  compress: true
+

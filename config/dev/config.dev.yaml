@@ -1,0 +1,27 @@
+ListenIp: 0.0.0.0
+ListenPort: 12000
+RpcPort : 12581
+Control : localhost:80
+PerformancePort : 12582
+Server:
+  -
+    ip: 192.168.31.235
+    port: 8888
+redis:
+  address: 127.0.0.1
+  password:
+  port: 6379
+  maxidle: 3
+  maxactive: 10
+  idletimeout: 0
+IsAutoTransServer: false
+AutoTransServerDual: 100
+ServerId : 200
+logger:
+  filename: ./local.ragent.com
+  maxSize: 500
+  maxBackups: 1000
+  maxAge: 1000
+  level: debug
+  verbose: 1
+  compress: true
